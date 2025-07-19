@@ -1,0 +1,40 @@
+/* src/index.css */
+
+/* Import Font Roboto (direkomendasikan oleh Material-UI) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* Juga sertakan Inter jika masih ingin menggunakannya sebagai fallback atau untuk elemen tertentu */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Gunakan Roboto sebagai font utama, Inter sebagai fallback */
+  font-family: 'Roboto', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; /* Penting untuk konsistensi layout */
+}
+
+/* Ensure all elements inherit box-sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Keyframes untuk animasi fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Keyframes untuk animasi slide-up */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Keyframes untuk spinner */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
